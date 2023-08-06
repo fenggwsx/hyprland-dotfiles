@@ -3,4 +3,4 @@
 	url = https://github.com/cdump/ranger-devicons2.git
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = https://github.com/NvChad/NvChad.git
+	url = https://github.com/fenggwsx/NvChad.git
