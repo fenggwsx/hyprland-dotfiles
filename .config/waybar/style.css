@@ -1,0 +1,119 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: mononoki Nerd Font;
+  font-size: 16px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: white;
+}
+
+#workspaces {
+  background-color: #24283b;
+  margin: 5px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+#workspaces button {
+  padding: 0px 10px;
+  color: #c0caf5;
+}
+
+#workspaces button.active {
+  color: #24283b;
+  background-color: #7aa2f7;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background-color: #7dcfff;
+  color: #24283b;
+  border-radius: 5px;
+}
+
+#window, #tray {
+  background-color: #24283b;
+  margin: 5px 5px 0px 5px;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+#cpu, #memory, #disk, #network, #pulseaudio, #backlight, #battery, #custom-date, #clock {
+  background-color: #24283b;
+  padding: 0px 10px;
+}
+
+#cpu, #network {
+  margin: 5px 0px 0px 5px;
+}
+
+#disk, #clock {
+    margin: 5px 5px 0px 0px;
+}
+
+#memory, #pulseaudio, #backlight, #battery, #custom-date {
+  margin: 5px 0px 0px 0px;
+}
+
+#cpu, #memory, #disk {
+  color: #9ece6a;
+}
+
+#cpu.warning, #memory.warning, #disk.warning {
+  color: #e0af68;
+}
+
+#cpu.critical, #memory.critical, #disk.critical {
+  background-color: #f7768e;
+  color: #24283b;
+}
+
+#cpu {
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#disk {
+  margin: 5px 5px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#custom-date {
+  color: #7dcfff;
+}
+
+#clock {
+  color: #b48ead;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 5px;
+}
+
+#backlight {
+  color: #c8c768;
+}
+
+#battery {
+  color: #9ece6a;
+}
+
+#battery.charging {
+  color: #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+  background-color: #f7768e;
+  color: #24283b;
+  /* border-radius: 5px 5px 5px 5px; */
+}
+
+#network {
+  color: #f7768e;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#pulseaudio {
+  color: #e0af68;
+}

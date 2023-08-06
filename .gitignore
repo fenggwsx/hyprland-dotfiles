@@ -1,0 +1,17 @@
+/*
+
+!/.config/
+/.config/*
+!/.config/cava/
+!/.config/dunst/
+!/.config/fastfetch/
+!/.config/fcitx5/
+!/.config/hypr/
+!/.config/kitty/
+!/.config/nvim/
+!/.config/ranger/
+!/.config/rofi/
+!/.config/waybar/
+!/.gitignore
+!/.gitmodules
+!/.zshrc
