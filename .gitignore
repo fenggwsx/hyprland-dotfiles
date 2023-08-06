@@ -23,6 +23,8 @@
 !/.local/share/fcitx5/rime/default.custom.yaml
 !/.local/share/fcitx5/rime/rime_ice.custom.yaml
 
+!/.oh-my-zsh/
+
 !/.gitignore
 !/.gitmodules
 !/.zshrc
