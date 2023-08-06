@@ -1,0 +1,17 @@
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 1
+      states: ["中", A]
+    - name: ascii_punct
+      reset: 0
+      states: ["¥", "$"]
+    - name: traditionalization
+      reset: 0
+      states: ["简", "繁"]
+    - name: emoji
+      reset: 1
+      states: ["💀", "😄"]
+    - name: full_shape
+      reset: 0
+      states: ["半角", "全角"]

@@ -12,6 +12,17 @@
 !/.config/ranger/
 !/.config/rofi/
 !/.config/waybar/
+
+!/.local/
+/.local/*
+!/.local/share
+/.local/share/*
+!/.local/share/fcitx5
+!/.local/share/fcitx5/*
+/.local/share/fcitx5/rime/*
+!/.local/share/fcitx5/rime/default.custom.yaml
+!/.local/share/fcitx5/rime/rime_ice.custom.yaml
+
 !/.gitignore
 !/.gitmodules
 !/.zshrc
