@@ -11,6 +11,7 @@
 !/.config/nvim/
 !/.config/ranger/
 !/.config/rofi/
+!/.config/swaylock/
 !/.config/waybar/
 
 !/.local/

@@ -11,7 +11,7 @@ option_3=" Capture Desktop"
 rofi_cmd() {
     rofi -theme-str "listview {columns: 1; lines: 3;}" \
         -dmenu \
-        -mesg "DIR: ~/pictures/screenshots" \
+        -mesg "DIR: ~/Pictures/screenshots" \
         -markup-rows \
         -theme screenshot.rasi
 }
@@ -24,7 +24,7 @@ run_rofi() {
 # Screenshot
 time=`date +%Y-%m-%d-%H-%M-%S`
 geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
-dir="$HOME/pictures/screenshots"
+dir="$HOME/Pictures/screenshots"
 file="${time}_${geometry}.png"
 
 if [[ ! -d "$dir" ]]; then

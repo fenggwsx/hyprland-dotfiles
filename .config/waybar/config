@@ -4,7 +4,7 @@
     "height": 40,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": [],
-    "modules-right": ["tray", "cpu", "memory", "disk",
+    "modules-right": ["tray", "cpu", "memory", "disk", "temperature",
         "network", "pulseaudio", "backlight", "battery",
         "custom/date", "clock"],
     "hyprland/window": {
@@ -24,18 +24,22 @@
         }
     },
     "memory": {
-    "format": " {}%",
+        "format": " {}%",
         "states": {
             "warning": 70,
             "critical": 90
         }
     },
     "disk": {
-    "format": "  {percentage_used}%",
+        "format": "  {percentage_used}%",
         "states": {
             "warning": 70,
             "critical": 90
         }
+    },
+    "temperature": {
+        "format": " {temperatureC}°C",
+        "critical-threshold": 60
     },
     "custom/date": {
         "format": "󰸗  {}",
@@ -43,9 +47,7 @@
         "exec": "$HOME/bin/waybar-date.sh",
     },
     "clock": {
-        "interval": 1,
-        "format": "󰅐  {:%H:%M}",
-        "tooltip-format": "󰅐 {:%H:%M:%S}"
+        "format": "󰅐  {:%R}"
     },
     "backlight": {
         "format": "{icon}  {percent}%",
