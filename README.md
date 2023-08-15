@@ -5,6 +5,8 @@ This repository stores the user configuration files of my Hyprland desktop. Ever
 ## Screenshots
 
 ![](./screenshots/01.png)
+![](./screenshots/02.png)
+![](./screenshots/03.png)
 
 ## System
 
@@ -13,7 +15,8 @@ This repository stores the user configuration files of my Hyprland desktop. Ever
 - Network: NetworkManager
 - Display server protocol: Wayland
 - Window manager: Hyprland
-- Login manager: sddm
+- Login manager: sddm (Tokyo night theme)
+- Shell: zsh (oh my zsh)
 - Notification daemon: dunst
 - Authentication agent: polkit kde agent
 - Status bar: waybar
@@ -42,3 +45,13 @@ This repository stores the user configuration files of my Hyprland desktop. Ever
 - audio editor: audacity
 - Snapshot manager: timeshift
 
+# Utilities
+
+- fastfetch (faster and more functional than neofetch)
+- lsd (ls with icons) -> ls
+- duf -> df
+- dust -> du
+- zoxide (a smarter cd) -> cd
+- bat -> cat
+- htop -> top
+- dog -> dig
