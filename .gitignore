@@ -25,6 +25,7 @@
 !/.local/share/fcitx5/rime/rime_ice.custom.yaml
 
 !/.oh-my-zsh/
+!/screenshots/
 
 !/.gitignore
 !/.gitmodules
