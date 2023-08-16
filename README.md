@@ -76,7 +76,7 @@ After installing it successfully, simply run `Hyprland` in a tty and you will se
 
 NOTE: If you have already installed other desktop environments (or window managers), I suppose a login manager like sddm has also been installed. In such case, you can enter Hyprland by selecting `Hyprland` in sddm.
 
-The essential softwares includes sddm (a login manager), zsh, kitty (a terminal emulator), waybar (a status bar written in C), rofi (an application launcher), dunst (notification daemon), polkit kde agent (an authentication agent), pipewire (includes pipewire-audio), qt5-wayland, qt6-wayland. If you lack any of them, just install it.
+The essential softwares include sddm (a login manager), zsh, kitty (a terminal emulator), waybar (a status bar written in C), rofi (an application launcher), dunst (notification daemon), polkit kde agent (an authentication agent), pipewire (including pipewire-audio), qt5-wayland, qt6-wayland. If you lack any of them, just install it.
 
 Then, you can copy the corresponding config folders into `~/.config/*`
 
@@ -90,7 +90,7 @@ If you reach this step, you are near to success, but before champagning, I sugge
 
 ## See Also
 
-Hyprland official website: [https://hyprland.org/](https://hyprland.org/)
-Oh-my-zsh official website: [https://ohmyz.sh/](https://ohmyz.sh/)
-Nvchad official website: [https://nvchad.com/](https://nvchad.com/)
-Arch wiki: [https://wiki.archlinux.org/](https://wiki.archlinux.org/)
+- Hyprland official website: [https://hyprland.org/](https://hyprland.org/)
+- Oh-my-zsh official website: [https://ohmyz.sh/](https://ohmyz.sh/)
+- Nvchad official website: [https://nvchad.com/](https://nvchad.com/)
+- Arch wiki: [https://wiki.archlinux.org/](https://wiki.archlinux.org/)
