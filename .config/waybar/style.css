@@ -41,7 +41,7 @@ window#waybar {
     border-radius: 5px;
 }
 
-#cpu, #memory, #disk, #temperature, #network, #pulseaudio, #backlight, #battery, #custom-date, #clock {
+#cpu, #memory, #disk, #temperature, #network, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date, #clock {
     background-color: #24283b;
     padding: 0px 10px;
 }
@@ -54,7 +54,7 @@ window#waybar {
     margin: 5px 5px 0px 0px;
 }
 
-#memory, #disk, #pulseaudio, #backlight, #battery, #custom-date {
+#memory, #disk, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date {
     margin: 5px 0px 0px 0px;
 }
 
@@ -81,14 +81,13 @@ window#waybar {
     border-radius: 0px 5px 5px 0px;
 }
 
-#custom-date {
-    color: #7dcfff;
+#network {
+    color: #f7768e;
+    border-radius: 5px 0px 0px 5px;
 }
 
-#clock {
-    color: #b48ead;
-    border-radius: 0px 5px 5px 0px;
-    margin-right: 5px;
+#pulseaudio {
+    color: #e0af68;
 }
 
 #backlight {
@@ -109,11 +108,16 @@ window#waybar {
     /* border-radius: 5px 5px 5px 5px; */
 }
 
-#network {
-    color: #f7768e;
-    border-radius: 5px 0px 0px 5px;
+#bluetooth {
+    color: #5badee;
 }
 
-#pulseaudio {
-    color: #e0af68;
+#custom-date {
+    color: #48b0bd;
+}
+
+#clock {
+    color: #b48ead;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 5px;
 }

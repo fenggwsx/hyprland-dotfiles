@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 ## Rofi   : Launcher (Modi Drun, Run, SSH)
 

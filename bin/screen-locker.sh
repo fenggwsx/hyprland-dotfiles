@@ -1,5 +1,5 @@
 #!/bin/sh
 
 swayidle -w \
-    timeout 300 'swaylock -f' \
+    timeout 600 'swaylock -f' \
     before-sleep 'swaylock -f'
