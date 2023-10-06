@@ -41,7 +41,7 @@ window#waybar {
     border-radius: 5px;
 }
 
-#cpu, #memory, #disk, #temperature, #network, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date, #clock {
+#cpu, #memory, #disk, #temperature, #custom-voltage, #custom-power, #custom-battery, #network, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date, #clock {
     background-color: #24283b;
     padding: 0px 10px;
 }
@@ -50,23 +50,23 @@ window#waybar {
     margin: 5px 0px 0px 5px;
 }
 
-#temperature, #clock {
+#custom-battery, #clock {
     margin: 5px 5px 0px 0px;
 }
 
-#memory, #disk, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date {
+#memory, #disk, #temperature, #custom-voltage, #custom-power, #pulseaudio, #backlight, #battery, #bluetooth, #custom-date {
     margin: 5px 0px 0px 0px;
 }
 
-#cpu, #memory, #disk, #temperature {
+#cpu, #memory, #disk, #temperature, #custom-voltage, #custom-power, #custom-battery {
     color: #9ece6a;
 }
 
-#cpu.warning, #memory.warning, #disk.warning {
+#cpu.warning, #memory.warning, #disk.warning, #custom-voltage.warning, #custom-power.warning, #custom-battery.warning {
     color: #e0af68;
 }
 
-#cpu.critical, #memory.critical, #disk.critical, #temperature.critical {
+#cpu.critical, #memory.critical, #disk.critical, #temperature.critical, #custom-voltage.critical, #custom-power.critical, #custom-battery.critical {
     background-color: #f7768e;
     color: #24283b;
 }
@@ -76,7 +76,7 @@ window#waybar {
     border-radius: 5px 0px 0px 5px;
 }
 
-#temperature {
+#custom-battery {
     margin: 5px 5px 0px 0px;
     border-radius: 0px 5px 5px 0px;
 }

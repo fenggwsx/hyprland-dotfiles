@@ -4,9 +4,14 @@
     "height": 40,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": [],
-    "modules-right": ["tray", "cpu", "memory", "disk", "temperature",
-        "network", "pulseaudio", "backlight", "battery", "bluetooth",
+    "modules-right": ["tray", "cpu", "memory", "disk", "temperature", "custom/voltage", "custom/power", "custom/battery",
+        "network", "pulseaudio", "backlight", "bluetooth",
         "custom/date", "clock"],
+    "hyprland/workspaces": {
+       "persistent_workspaces": {
+             "*": 10
+       }
+    },
     "hyprland/window": {
         "rewrite": {
             "": "Hyprland Desktop"
@@ -17,7 +22,7 @@
         "spacing": 10
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": "   {usage}%",
         "states": {
             "warning": 70,
             "critical": 90
@@ -38,11 +43,53 @@
         }
     },
     "temperature": {
-        "thermal-zone": 2,
-        "interval": 3,
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "interval": 1,
         "format": "{icon}  {temperatureC}°C",
         "format-icons": ["", "", "", "", ""],
         "critical-threshold": 70
+    },
+    "custom/voltage": {
+        "format": "󰠠  {}",
+        "interval": 1,
+        "exec": "$HOME/.config/waybar/scripts/voltage.sh BAT0",
+        "return-type": "json"
+    },
+    "custom/power": {
+        "format": "󱠇  {}",
+        "interval": 1,
+        "exec": "$HOME/.config/waybar/scripts/power.sh BAT0",
+        "return-type": "json"
+    },
+    "custom/battery": {
+        "format": "{icon}  {}",
+        "interval": 1,
+        "exec": "$HOME/.config/waybar/scripts/battery.sh BAT0",
+        "return-type": "json",
+        "format-icons": {
+            "battery-0": "󰂎",
+            "battery-1": "󰁺",
+            "battery-2": "󰁻",
+            "battery-3": "󰁼",
+            "battery-4": "󰁽",
+            "battery-5": "󰁾",
+            "battery-6": "󰁿",
+            "battery-7": "󰂀",
+            "battery-8": "󰂁",
+            "battery-9": "󰂂",
+            "charging-0": "󰢟",
+            "charging-1": "󰢜",
+            "charging-2": "󰂆",
+            "charging-3": "󰂇",
+            "charging-4": "󰂈",
+            "charging-5": "󰢝",
+            "charging-6": "󰂉",
+            "charging-7": "󰢞",
+            "charging-8": "󰂊",
+            "charging-9": "󰂋",
+            "charging-10": "󰂅",
+            "full": "󰂅"
+        }
     },
     "network": {
         "format-wifi": "   {essid}",
@@ -78,19 +125,6 @@
     "backlight": {
         "format": "{icon}  {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-    },
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15,
-        },
-        "interval": 3,
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-plugged": "󰂄{capacity}%",
-        "format-full": "󱈑 {capacity}%",
-        "format-icons": ["󱊡", "󱊢", "󱊣"],
-        "tooltip-format": "{timeTo}"
     },
     "custom/date": {
         "format": "󰸗  {}",
