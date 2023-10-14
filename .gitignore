@@ -8,7 +8,6 @@
 !/.config/fcitx5/
 !/.config/hypr/
 !/.config/kitty/
-!/.config/nvim/
 !/.config/ranger/
 !/.config/rofi/
 !/.config/swaylock/
@@ -26,6 +25,7 @@
 
 !/.oh-my-zsh/
 !/bin/
+!/configs/
 !/screenshots/
 
 !/.gitignore
