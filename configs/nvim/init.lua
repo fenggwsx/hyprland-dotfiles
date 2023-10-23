@@ -31,7 +31,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 vim.o.list = true
-vim.o.listchars = "space:·"
+vim.o.listchars = "tab:..,space:·"
 
 vim.o.mouse = "a"
 

@@ -13,4 +13,3 @@ chosen="$(run_rofi)"
 if [ $? -eq 0 ]; then
     echo -e "$chosen" | cliphist decode | wl-copy
 fi
-

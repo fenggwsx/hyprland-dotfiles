@@ -3,7 +3,7 @@
 ## Rofi   : Power Menu
 
 # CMDs
-uptime="`uptime -p | sed -e 's/up //g'`"
+uptime="$(uptime -p | sed -e 's/up //g')"
 
 # Options
 shutdown=' Shutdown'

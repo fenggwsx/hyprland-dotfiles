@@ -33,15 +33,15 @@ fi
 
 # take shots
 shotdesktop () {
-    sleep 1 && hyprshot -m output -o ${dir}
+    sleep 1 && hyprshot -m output -o "$dir"
 }
 
 shotwin () {
-    sleep 1 && hyprshot -m window -o ${dir}
+    sleep 1 && hyprshot -m window -o "$dir"
 }
 
 shotarea () {
-    sleep 1 && hyprshot -m region -o ${dir}
+    sleep 1 && hyprshot -m region -o "$dir"
 }
 
 # Execute Command
@@ -68,4 +68,3 @@ case ${chosen} in
         run_cmd --opt3
         ;;
 esac
-
