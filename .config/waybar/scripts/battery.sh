@@ -24,16 +24,18 @@ text="${energy_Wh}Wh"
 status=$(cat $battery/status)
 
 case $status in
-    Discharging)
+    'Discharging')
         alt="battery-$((energy_permillage / 100))"
         if [ $energy_permillage -le 150 ]; then
             class='critical'
         elif [ $energy_permillage -le 300 ]; then
             class='warning'
         fi;;
-    Charging)
+    'Charging')
         alt="charging-$((energy_permillage / 100))";;
-    Full)
+    'Full')
+        alt='full';;
+    'Not charging')
         alt='full';;
 esac
 
