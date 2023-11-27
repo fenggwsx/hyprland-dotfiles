@@ -7,8 +7,8 @@ local servers = {
     "clangd",
     "cssls",
     "html",
-    "lua_ls",
-    "pylsp",
+    "jdtls",
+    "pyright",
     "tsserver",
     "volar"
 }
