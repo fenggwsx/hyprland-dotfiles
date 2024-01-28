@@ -107,7 +107,7 @@ alias du='dust'
 alias ls='lsd'
 alias la='lsd -all'
 alias top='htop'
-alias vim='neovide'
+alias vim='nvim'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
