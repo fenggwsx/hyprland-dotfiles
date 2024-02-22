@@ -8,6 +8,7 @@ vim.wo.number = true
 vim.wo.relativenumber = false
 
 vim.wo.cursorline = true
+vim.wo.colorcolumn = '80'
 
 vim.o.tabstop = 2
 vim.bo.tabstop = 2
